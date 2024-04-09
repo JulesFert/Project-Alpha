@@ -1,0 +1,65 @@
+.root {
+    --navbar-color: #052F5F;
+    --title-color: #F1A208;
+    --text-color: #fefae0;
+    --layout-color: #06A77D;
+}
+
+body {
+    background-color: var(--navbar-color);
+    font-family: 'ABeeZee', sans-serif;
+}
+
+h1, h2 {
+    color: var(--title-color);
+    transition: 0.5s ease-in-out;
+}
+
+h1:hover, h2:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: var(--text-color);
+    font-size: 1rem;
+    text-align: justify;
+}
+
+#list-skills, #list-projects, #list-contact {
+    list-style-type: none;
+}
+
+#list-projects img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#list-projects li {
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+#list-projects p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-weight: bolder;
+    font-size: 3rem;
+    width: 100%;
+}
+
+#list-projects li:hover {
+    filter: brightness(50%);
+}
+
+.default {
+    display: block; /* Assurez-vous que le texte caché est visible */
+    opacity: 0; /* Définir l'opacité à 0 pour le texte caché */
+    transition: opacity 0.5s ease-in-out; /* Ajouter une transition pour l'opacité */
+}
