@@ -3,111 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css?v=1.1">
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=abeezee:400|abhaya-libre:800|aclonica:400|alata:400" rel="stylesheet" />
-    <title>Portfolio</title>
+    <title>Jules FERT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Croissant+One&family=Josefin+Sans:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-
-
-<body class="root">
-
-    <div id="navbar" class="container">
-        <nav class="navbar navbar-expand navbar-light bg-dark rounded-3 mt-3">
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link text-light fs-4" href="#">Home</a>
-                <a class="nav-item nav-link text-light fs-4" href="#">Projects</a>
-                <a class="nav-item nav-link text-light fs-4" href="#">Contact</a>
-              </div>
-            </div>
-          </nav>
-    </div>
-   
-
-    <header class="header container mt-5">
-        <h1 class="header__title fs-1">Hello, i'm a web developer.</h1>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <article class="container mt-5">
-            <h2 class="">About me</h2>
-            <p class="fw-bold">At 25 years old and after 4 years in the workforce, I embarked on a career change to become a web developer after 6 months of self-learning. As part of my employment at the Coopérative Biocoop, I was able to benefit from a Professional Transition Leave. From February to August 2023, I attended the 'Web and Mobile Web Developer' training program at O'clock school.
+        <section id="home">
+            <h1 id="first_title">Hello, I'm a web developer</h1>
+            <div class=""><img src="./assets/profile-pic (1).png" id="profile-picture" class="profile-picture" alt="profile-picture"></div>
+        </section>
+        <section id="about">
+            <h2>Me</h2>
+            <p>At 25 years old and after 4 years in the workforce, I began a career transition to become a web developer following 6 months of self-taught learning. As part of my job at the Biocoop Cooperative, I was granted a Professional Transition leave. From February to August 2023, I took the "Web and Mobile Web Developer" course at O'clock School.
 
-                These few months of intense training confirm my motivation to continue on this path. Therefore, I enrolled for the 2023-2024 academic year in the 'Application Developer Designer' training program at O'clock school, which is conducted alternately. I still need to find a company that will host me for this 18-month program starting in October 2024.
+                These few months of intensive training have confirmed my motivation to continue on this path. Therefore, I enrolled for the 2023-2024 academic year in the "Application Developer Designer" program at O'clock School, which is a work-study course. I now need to find a company that will take me in for this 18-month training, starting from either June or October 2024.
                 
-                Best development practices are important to me, and I can demonstrate great adaptability in the workplace depending on the technologies used.
+                Good development practices are important to me, and I can demonstrate great adaptability in a company based on the technologies used.
                 
-                In my opinion, the profession of web developer is a promising and exciting one for the future. Coding, creating websites, and the constant search for information in the field are aspects that I enjoy and greatly motivate me.</p>
+                In my view, the web developer profession is a job of the future, rich and exciting. I greatly enjoy coding, building websites, and the constant research involved in the profession. It excites and motivates me immensely.</p>
+        </section>
 
+        <section id="competences">
             <h2>My skills</h2>
-            <div class="container flex">
+            <div class="competence-container">
                 <ul id="list-skills" class="row">
-                    <li class="col-4"><svg width="150px" height="150px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li><svg width="150px" height="150px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="16" cy="16" r="14" fill="#8892BF"/>
                         <path d="M14.4392 10H16.1192L15.6444 12.5242H17.154C17.9819 12.5419 18.5986 12.7269 19.0045 13.0793C19.4184 13.4316 19.5402 14.1014 19.3698 15.0881L18.5541 19.4889H16.8497L17.6288 15.2863C17.7099 14.8457 17.6856 14.533 17.5558 14.348C17.426 14.163 17.146 14.0705 16.7158 14.0705L15.3644 14.0573L14.3661 19.4889H12.6861L14.4392 10Z" fill="white"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.74092 12.5243H10.0036C10.9612 12.533 11.6552 12.8327 12.0854 13.4229C12.5156 14.0132 12.6576 14.8193 12.5115 15.8414C12.4548 16.3085 12.3289 16.7665 12.1341 17.2159C11.9474 17.6652 11.6878 18.0704 11.355 18.4317C10.9491 18.8898 10.5149 19.1805 10.0523 19.304C9.58969 19.4274 9.11076 19.489 8.61575 19.489H7.15484L6.69222 22H5L6.74092 12.5243ZM7.43485 17.9956L8.16287 14.0441H8.40879C8.49815 14.0441 8.5914 14.0396 8.6888 14.0309C9.33817 14.0221 9.87774 14.0882 10.308 14.2291C10.7462 14.37 10.8923 14.9031 10.7462 15.8282C10.5678 16.9296 10.2186 17.5727 9.69926 17.7577C9.1799 17.934 8.53053 18.0176 7.75138 18.0088H7.58094C7.53224 18.0088 7.48355 18.0043 7.43485 17.9956Z" fill="white"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M24.4365 12.5243H21.1738L19.4329 22H21.1251L21.5878 19.489H23.0487C23.5437 19.489 24.0226 19.4274 24.4852 19.304C24.9479 19.1805 25.382 18.8898 25.7879 18.4317C26.1207 18.0704 26.3803 17.6652 26.567 17.2159C26.7618 16.7665 26.8877 16.3085 26.9444 15.8414C27.0905 14.8193 26.9486 14.0132 26.5183 13.4229C26.0881 12.8327 25.3942 12.533 24.4365 12.5243ZM22.5958 14.0441L21.8678 17.9956C21.9165 18.0043 21.9652 18.0088 22.0139 18.0088H22.1843C22.9635 18.0176 23.6128 17.934 24.1322 17.7577C24.6515 17.5727 25.0007 16.9296 25.1792 15.8282C25.3253 14.9031 25.1792 14.37 24.7409 14.2291C24.3107 14.0882 23.7711 14.0221 23.1217 14.0309C23.0243 14.0396 22.9311 14.0441 22.8417 14.0441H22.5958Z" fill="white"/>
                         </svg></li>
-                    <li class="col-4"><svg width="150px" height="150px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M117 608.4v178.5c1.5 93.7 155.7 169.5 395 169.5s393.4-75.8 395-169.5V608.4H117z" fill="#1B9BDB" /><path d="M907 607.7c0 99.4-154.8 180-395 180s-395-80.6-395-180 154.8-180 395-180 395 80.5 395 180z" fill="#FFFFFF" /><path d="M117 428.4v158.5c1.5 93.7 155.7 179.5 395 179.5s393.4-85.8 395-179.5V428.4H117z" fill="#1B9BDB" /><path d="M907 427.7c0 99.4-154.8 180-395 180s-395-80.6-395-180 154.8-180 395-180 395 80.5 395 180z" fill="#FFFFFF" /><path d="M117 248.4v158.5c1.5 93.7 155.7 179.5 395 179.5s393.4-85.8 395-179.5V248.4H117z" fill="#1B9BDB" /><path d="M907 247.7c0 99.4-154.8 180-395 180s-395-80.6-395-180 154.8-180 395-180 395 80.5 395 180z" fill="#3ED6FF" /></svg></li>
-                    <li class="col-4"><svg width="150px" height="150px" xmlns="http://www.w3.org/2000/svg"
+                    <li><svg width="150px" height="150px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M117 608.4v178.5c1.5 93.7 155.7 169.5 395 169.5s393.4-75.8 395-169.5V608.4H117z" fill="#1B9BDB" /><path d="M907 607.7c0 99.4-154.8 180-395 180s-395-80.6-395-180 154.8-180 395-180 395 80.5 395 180z" fill="#FFFFFF" /><path d="M117 428.4v158.5c1.5 93.7 155.7 179.5 395 179.5s393.4-85.8 395-179.5V428.4H117z" fill="#1B9BDB" /><path d="M907 427.7c0 99.4-154.8 180-395 180s-395-80.6-395-180 154.8-180 395-180 395 80.5 395 180z" fill="#FFFFFF" /><path d="M117 248.4v158.5c1.5 93.7 155.7 179.5 395 179.5s393.4-85.8 395-179.5V248.4H117z" fill="#1B9BDB" /><path d="M907 247.7c0 99.4-154.8 180-395 180s-395-80.6-395-180 154.8-180 395-180 395 80.5 395 180z" fill="#3ED6FF" /></svg></li>
+                    <li><svg width="150px" height="150px" xmlns="http://www.w3.org/2000/svg"
                         aria-label="JavaScript" role="img"
                         viewBox="0 0 512 512"><rect
                         width="512" height="512"
                         rx="15%"
                         fill="#f7df1e"/><path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"/></svg></li>
-                </ul>
-            </div>
-        </article>
+                    <li>
+                        <svg width="150px" height="150px" fill="#000000"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="800px"
+        height="800px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
 
-        <article class="container mt-5">
+                <g id="5151e0c8492e5103c096af88a51f35a1">
+
+                <path display="inline" d="M255.991,0.5C114.889,0.5,0.5,114.882,0.5,255.985C0.5,397.105,114.889,511.5,255.991,511.5
+                        C397.11,511.5,511.5,397.105,511.5,255.985C511.5,114.882,397.11,0.5,255.991,0.5z M393.788,148.373
+                        c-11.83,0.416-19.993-6.649-20.376-17.391c-0.121-3.941,0.89-7.368,3.597-11.402c2.633-5.16,3.202-5.759,3.136-8.013
+                        c-0.245-6.758-10.463-7.012-13.257-6.883c-38.354,1.272-48.464,53.028-56.656,95.12l-4.009,22.193
+                        c22.082,3.231,37.759-0.752,46.509-6.412c12.31-7.988-3.452-16.205-1.473-25.296c2.029-9.265,10.451-13.739,17.143-13.918
+                        c9.377-0.245,16.072,9.489,15.86,19.357c-0.329,16.322-21.981,38.74-65.293,37.821c-5.273-0.117-10.127-0.495-14.646-1.044
+                        l-8.176,45.102c-7.311,34.133-17.024,80.79-51.795,121.493c-29.87,35.529-60.178,41.031-73.747,41.492
+                        c-25.4,0.874-42.229-12.675-42.841-30.747c-0.582-17.507,14.891-27.071,25.051-27.388c13.549-0.449,22.93,9.373,23.292,20.692
+                        c0.345,9.564-4.653,12.559-7.972,14.363c-2.204,1.784-5.527,3.605-5.402,7.544c0.079,1.68,1.884,5.563,7.522,5.381
+                        c10.741-0.366,17.874-5.677,22.852-9.231c24.739-20.602,34.258-56.53,46.725-121.926l2.611-15.839
+                        c4.259-21.271,8.967-44.974,16.161-68.602c-17.434-13.128-27.892-29.4-51.342-35.767c-16.077-4.37-25.883-0.661-32.77,8.055
+                        c-8.162,10.321-5.455,23.753,2.429,31.629l13.029,14.405c15.96,18.455,24.705,32.813,21.408,52.113
+                        c-5.211,30.847-41.951,54.491-85.379,41.143c-37.073-11.419-44.001-37.667-39.544-52.138c3.926-12.721,14.035-15.124,23.925-12.102
+                        c10.587,3.285,14.741,16.156,11.71,26.023c-0.346,1.057-0.886,2.845-1.988,5.198c-1.234,2.729-3.505,5.119-4.495,8.292
+                        c-2.379,7.768,8.259,13.282,15.67,15.561c16.588,5.106,32.777-3.567,36.878-16.991c3.813-12.338-3.988-20.945-7.224-24.243
+                        l-15.707-16.817c-7.182-8.009-22.98-30.311-15.282-55.364c2.973-9.656,9.24-19.902,18.318-26.689
+                        c19.179-14.288,40.034-16.642,59.896-10.924c25.687,7.386,38.038,24.381,54.048,37.496c8.953-26.269,21.375-51.992,40.047-73.703
+                        c16.867-19.778,39.522-34.096,65.477-34.985c25.936-0.856,45.539,10.899,46.184,29.504
+                        C414.153,132.455,409.604,147.846,393.788,148.373z">
+
+                </path>
+
+                </g>
+
+                </svg>
+                    </li>
+                    </ul>
+            </div>
+        </section>
+
+        <section id="projects">
             <h2>My projects</h2>
-            <div class="container flex">
-                <ul id="list-projects" class="row">
-                    <li class="col-4"><a href="" class="list-link"><img class="project img-fluid rounded-3" src="assets/pokedex.png" alt=""></a><p class="default">Pokedex</p></li>
-                    <li class="col-4"><a href="" class="list-link"><img class="project img-fluid rounded-3" src="assets/cryptiwiki.png" alt=""></a><p class="default">CryptiWiki</p></li>
-                    <li class="col-4"><a href="" class="list-link"><img class="project img-fluid rounded-3" src="assets/autypik.png" alt="image-project"></a><p class="default">Autypik Tatoo</p></li>
-                </ul>
-            </div>
+                <a href="./autypik.html"><div class="project" id="project1"><img class="project" src="./assets/autypik.png" alt=""><p class="project_title">Autypik Tatoo</p></div></a>
+                <a href="./pokedex.html"><div class="project" id="project2"><img class="project" src="./assets/pokedex.png" alt=""><p class="project_title">Pokédex</p></div></a>
+                <a href="./cryptiwiki.html"><div class="project" id="project3"><img class="project" src="./assets/cryptiwiki.png" alt=""><p class="project_title">CryptiWiki</p></div></a>
+                <a href="./sundeer.html"><div class="project" id="project3"><img class="project" src="./assets/sundeer.png" alt=""><p class="project_title">SunDeer Production</p></div></a>
+        </section>
 
-        </article>
+        <footer id="contact">
+            <p>To contact me</p>
+            <ul class="social-media-list">
+                <li><a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.youtube.com/user/yourusername" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </footer>
 
-        <article class="container mt-5">
-            <h2>Contact me</h2>
-            <div class="container flex">
-                <ul id="list-contact" class="row">
-                    <li class="col-4"><svg width="150px" height="150px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg></li>
-                    <li class="col-4"><svg width="150px" height="150px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    
-                        <title>github [#142]</title>
-                        <desc>Created with Sketch.</desc>
-                        <defs>
-                    
-                    </defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
-                                <g id="icons" transform="translate(56.000000, 160.000000)">
-                                    <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]">
-                    
-                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg></li>
-                    <li class="col-4"></li>
-                </ul>
-            </div>
-
-        </article>
-
+        <script src="app.js"></script>
     </main>
-
-    <footer>
-        
-    </footer>
-    
-
-    <script src="./app.js"></script>
 </body>
 </html>

@@ -1,65 +1,252 @@
-.root {
-    --navbar-color: #052F5F;
-    --title-color: #F1A208;
-    --text-color: #fefae0;
-    --layout-color: #06A77D;
+* {
+    --background-color: #232C33;
+    --nav-background: #CCA43B;
+    --title-color: #CCA43B;
+    --text-color: #DADFF7;
+    --h1-size: 6rem;
+    --h2-size: 3rem;
+    --footer-color: #181d20;
+    --text-size: 1.2rem;
 }
 
 body {
-    background-color: var(--navbar-color);
-    font-family: 'ABeeZee', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p, a {
+    font-size: var(--text-size);
+}
+
+nav {
+    background-color: var(--nav-background);
+    padding: 10px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 50%;
+    background-color: #000;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.show {
+    display: block;
+}
+
+#first_title {
+    font-size: var(--h1-size);
+    margin-left: 1rem;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
 }
 
 h1, h2 {
     color: var(--title-color);
-    transition: 0.5s ease-in-out;
 }
 
-h1:hover, h2:hover {
-    text-decoration: underline;
+h2 {
+    font-size: var(--h2-size);
+    text-align: left;
+    margin-left: 8rem;
 }
 
-p {
-    color: var(--text-color);
-    font-size: 1rem;
+#about, #projects, #competences, footer {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+#description, #pictures, #technos, #github {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+#about p {
     text-align: justify;
+    margin: 0 8rem;
 }
 
-#list-skills, #list-projects, #list-contact {
+#list-skills {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
 }
 
-#list-projects img {
-    height: 100%;
-    width: 100%;
+#competences {
+    text-align: center;
+    padding: 20px;
+}
+
+.competence-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les éléments */
+}
+
+.competence {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.competence img {
+    max-width: 100px; /* Taille maximale des logos */
+    height: auto; /* Pour garder les proportions */
+}
+
+.project {
+    transition: 0.3s;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #000;
+    display: inline-block;
+    margin: 10px;
     object-fit: cover;
 }
 
-#list-projects li {
-    transition: 0.5s ease-in-out;
+.project_title {
+    margin: 0;
+    color: var(--text-color);
+}
+
+#projects .project:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    background: var(--footer-color);
+}
+
+.social-media-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-list li {
+    margin: 0 10px;
+}
+
+.social-media-list li a {
+    text-decoration: none;
+    color: inherit; /* Ou une couleur de votre choix */
+}
+
+.social-media-list li a i {
+    font-size: 24px; /* Ou la taille que vous souhaitez */
+    transition: color 0.3s;
+}
+
+.social-media-list li a:hover i {
+    color: #0077b5; /* Couleur de survol pour LinkedIn, par exemple */
+}
+
+
+/* ---------------------------------PAGE AUTYPIK------------------------------ */
+#title_autypik {
+    display: flex;
+    justify-content: space-between;
+}
+
+#intro_container {
     position: relative;
 }
 
-#list-projects p {
+#intro_container p {
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-top: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: black;
-    font-weight: bolder;
-    font-size: 3rem;
-    width: 100%;
 }
 
-#list-projects li:hover {
-    filter: brightness(50%);
+#intro_container img {
+    object-fit: cover;
 }
 
-.default {
-    display: block; /* Assurez-vous que le texte caché est visible */
-    opacity: 0; /* Définir l'opacité à 0 pour le texte caché */
-    transition: opacity 0.5s ease-in-out; /* Ajouter une transition pour l'opacité */
+.site_link {
+    text-decoration: none;
+    color: var(--text-color);
 }
+
+#description p, #technos p, #autypik_link {
+    text-align: justify;
+    margin: 0 8rem;
+}
+
+.pictures_container {
+    margin: 0 8rem;
+}
+
+.pictures_container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 0.5rem;
+}
+
+#autypik_link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#autypik_link:hover {
+    color: var(--title-color);
+}
+
+#intro_container .autypik:hover + p {
+    opacity: 1;
+}
+
+.autypik {
+    transition: 0.3s;
+}
+
+.autypik:hover {
+    transform: scale(1.02);
+    filter: brightness(0.5);
+}
+
+#github {
+    margin-bottom: 1rem;
+}
+
