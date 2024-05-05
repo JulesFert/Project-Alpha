@@ -15,6 +15,11 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
+    min-width: 100vh;
+}
+
+header {
+    width: 100%;
 }
 
 p, a {
@@ -102,6 +107,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 5rem;
+    flex-wrap: wrap;
 }
 
 #competences {
