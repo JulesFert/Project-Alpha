@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }, 500); 
 
     setTimeout(function() {
-        let title = document.getElementById('first_title')
+        let title = document.querySelector('.first_title')
         title.style.opacity = 1
     }, 700);
 
