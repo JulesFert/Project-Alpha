@@ -282,6 +282,10 @@ footer {
         margin: 0 1rem;
     }
 
+    #about strong {
+        color: var(--title-color);
+    }
+
     #list-skills {
         padding: 0;
     }
