@@ -262,6 +262,7 @@ footer {
 
     header {
         width: 100%;
+        position: fixed;
     }
 
     #profile-picture {
